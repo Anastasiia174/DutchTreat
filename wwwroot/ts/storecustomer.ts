@@ -1,6 +1,7 @@
 ﻿class StoreCustomer {
 
-    constructor(private firstName:string, private lastName:string) {        
+    constructor(private firstName: string, private lastName: string) { 
+        this.ourName = "";
     }
 
     public visits: number = 0;
