@@ -1,0 +1,6 @@
+﻿.product-info img {
+    float: left;
+    max-width: 100px;
+    margin: 0 2px;
+    overflow: hidden;
+}
