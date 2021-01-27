@@ -10,6 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Remove="ClientApp\app\shop\productList.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ClientApp\app\shop\productList.component.ts" />
     <None Include="wwwroot\index.html" />
   </ItemGroup>
 
