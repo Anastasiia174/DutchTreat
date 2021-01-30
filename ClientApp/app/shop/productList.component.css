@@ -1,6 +1,19 @@
-﻿.product-info img {
+﻿.product-img-wrapper {
     float: left;
+    margin-right: 5px;
+}
+.product-title {
+    font-size: large;
+    font-weight: bold;
+}
+.product-img {
     max-width: 100px;
-    margin: 0 2px;
-    overflow: hidden;
+}
+.btn-success {
+    width: 100px;
+}
+.product-card {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #c2c2c2;
 }
