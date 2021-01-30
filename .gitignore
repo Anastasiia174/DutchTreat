@@ -341,3 +341,9 @@ healthchecksdb
 
 # JS maps
 *.js.map
+
+#Output ts files
+dist/out-tsc/*
+
+# Output files 
+wwwroot/clientapp/*
