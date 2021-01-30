@@ -20,6 +20,10 @@ export class ProductList implements OnInit {
 					this.products = this.data.products;
 				}
 			});
+	}
+
+	addProduct(product: Product) {
+		this.data.addToOrder(product);
     }
 
 	public products: Product[] = [];

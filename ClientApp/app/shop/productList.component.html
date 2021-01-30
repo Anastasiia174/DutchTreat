@@ -11,7 +11,7 @@
             <div><strong>Description:</strong> {{ p.artDescription }}</div>
             
             <div class="product-button d-flex justify-content-center">
-                <button id="buyButton" class="btn btn-success">Buy</button>
+                <button id="buyButton" class="btn btn-success" (click)="addProduct(p)">Buy</button>
             </div>            
         </div>        
     </div>
