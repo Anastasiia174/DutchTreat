@@ -1,2 +1,21 @@
 ﻿<h3>Shopping Cart</h3>
-<div>Count: {{ data.order.items.length }}</div>
+<div>#/Items: {{ data.order.items.length }}</div>
+<div>Subtotal: {{ data.order.subtotal | currency }}</div>
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <td>Product</td>
+            <td>#</td>
+            <td>$</td>
+            <td>Total</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of data.order.items">
+            <td>{{ o.productCategory }} - {{ o.productTitle }}</td>
+            <td>{{ o.quantity }}</td>
+            <td>{{ o.unitPrice | currency }}</td>
+            <td>{{ (o.unitPrice * o.quantity) | currency }}</td>
+        </tr>
+    </tbody>
+</table>

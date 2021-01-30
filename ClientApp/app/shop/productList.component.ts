@@ -13,7 +13,7 @@ export class ProductList implements OnInit {
 	constructor(private data: DataService) {
 		this.products = data.products;
 	}
-    ngOnInit(): void {
+    ngOnInit(): void { 
 		this.data.loadProducts()
 			.subscribe(success => {
 				if (success) {
